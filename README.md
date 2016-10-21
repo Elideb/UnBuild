@@ -22,7 +22,6 @@ Example:
         [MenuItem("Build/Test Build")]
         public static void CreateNewBuild() {
             Builder.DefaultConfiguration
-                   .SetExecName("CoolNewBuild")
                    .SetTargetDir("../Builds/Test_" + Builder.CurrentTime)
                    .AddPostbuildCommandLine("echo Durum dum dum> durum.txt")
                    .AddBuildOptions(BuildOptions.Development, BuildOptions.ConnectWithProfiler)
